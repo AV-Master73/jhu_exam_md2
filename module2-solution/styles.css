@@ -63,25 +63,40 @@
         /* Large devices only */
         
         @media (min-width: 1200px) {
-            .container .jumbotron {
-                background: url('../images/interior_1200.jpg') no-repeat;
-                height: 675px;
+            #main-header h1 {
+                margin-bottom: 20px
             }
+            #chicken-tile,
+            #beef-tile {
+                width: 360px;
+                margin: 15px auto 15px;
+            }
+            #sushi-tile {
+                width: 360px;
+                margin: 15px auto 15px;
+            }
+            /* End Home Page */
+            /* Footer */
+            #copyright {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            /* End Footer */
         }
-        /* Footer */
-        
-        #copyright {
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        /* End Footer */
         /* Medium devices only */
         
         @media (min-width: 992px) and (max-width: 1199px) {
-            /* Home Page */
-            .container .jumbotron {
-                background: url('../images/interior_992.jpg') no-repeat;
-                height: 558px;
+            #main-header h1 {
+                margin-bottom: 20px
+            }
+            #chicken-tile,
+            #beef-tile {
+                width: 720px;
+                margin: 15px auto 15px;
+            }
+            #sushi-tile {
+                width: 720px;
+                margin: 15px auto 15px;
             }
             /* End Home Page */
             /* Footer */
@@ -151,7 +166,7 @@
                 width: 280px;
                 margin: 0 auto 15px;
             }
-            .col-xxs-12 {
+            .col-xs-12 {
                 position: relative;
                 min-height: 1px;
                 padding-right: 15px;
