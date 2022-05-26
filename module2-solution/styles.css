@@ -34,6 +34,7 @@
             width: 90%;
             margin-bottom: 15px;
             position: relative;
+            text-decoration: none;
             border: 2px solid #ccbbaa;
             overflow: hidden;
         }
@@ -58,6 +59,13 @@
             background-color: #880000;
             color: #ababab;
             opacity: .8;
+        }
+        
+        .inner-text {
+            text-decoration: none;
+            text-align: left;
+            color: #ababab;
+            padding: 20px 5px 5px 5px;
         }
         /* End Home Page */
         /* Large devices only */
