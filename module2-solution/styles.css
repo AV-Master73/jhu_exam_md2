@@ -12,7 +12,7 @@
         }
         /** HEADER SECTION **/
         
-        .main-header h1 {
+        #main-header h1 {
             font-family: 'Anton', sans-serif;
             color: #ababab;
             text-transform: uppercase;
@@ -20,16 +20,16 @@
             font-weight: regular;
             text-shadow: 2px 2px 2px #222;
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 15PX;
             line-height: .75;
             text-align: center;
         }
         /* END HEADER */
         /* Home Page */
         
-        #menu-tile,
-        #specials-tile,
-        #map-tile {
+        #chicken-tile,
+        #beef-tile,
+        #sushi-tile {
             height: 250px;
             width: 90%;
             margin-bottom: 15px;
@@ -38,15 +38,15 @@
             overflow: hidden;
         }
         
-        #menu-tile:hover,
-        #specials-tile:hover,
-        #map-tile:hover {
+        #chicken-tile:hover,
+        #beef-tile:hover,
+        #sushi-tile:hover {
             box-shadow: 0 1px 5px 1px #ccbbaa;
         }
         
-        #menu-tile span,
-        #specials-tile span,
-        #map-tile span {
+        #chicken-tile span,
+        #beef-tile span,
+        #sushi-tile span {
             position: absolute;
             top: 0;
             right: 0;
@@ -68,6 +68,13 @@
                 height: 675px;
             }
         }
+        /* Footer */
+        
+        #copyright {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        /* End Footer */
         /* Medium devices only */
         
         @media (min-width: 992px) and (max-width: 1199px) {
@@ -77,51 +84,55 @@
                 height: 558px;
             }
             /* End Home Page */
+            /* Footer */
+            #copyright {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            /* End Footer */
         }
         /* Small devices only */
         
         @media (min-width: 768px) and (max-width: 991px) {
             /* Home Page */
-            .container .jumbotron {
-                background: url('../images/interior_768.jpg') no-repeat;
-                height: 432px;
+            #main-header h1 {
+                margin-bottom: 20px
+            }
+            #chicken-tile,
+            #beef-tile {
+                width: 360px;
+                margin: 15px auto 15px;
+            }
+            #sushi-tile {
+                width: 720px;
+                margin: 15px auto 15px;
             }
             /* End Home Page */
+            /* Footer */
+            #copyright {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            /* End Footer */
         }
         /* Extra-small devices only */
         
         @media (max-width: 767px) {
             /* Home Page */
-            .container .jumbotron {
-                margin-top: 30px;
-                padding: 0;
+            #main-header h1 {
+                margin-bottom: 20px
             }
-            #menu-tile,
-            #specials-tile {
+            #chicken-tile,
+            #beef-tile,
+            #sushi-tile {
                 width: 360px;
-                margin: 0 auto 15px;
-            }
-            .menu-item-photo {
-                margin-right: auto;
-            }
-            .menu-item-tile .menu-item-price {
-                text-align: center;
-            }
-            .menu-item-description {
-                text-align: center;
+                margin: 15px auto 15px;
             }
             /* End Home Page */
             /* Footer */
-            .panel-footer section {
-                margin-bottom: 30px;
+            #copyright {
+                margin-bottom: 10px;
                 text-align: center;
-            }
-            .panel-footer section:nth-child(3) {
-                margin-bottom: 0;
-                /* margin already exists on this row */
-            }
-            .panel-footer section hr {
-                width: 50%;
             }
             /* End Footer */
         }
@@ -129,14 +140,14 @@
         
         @media (max-width: 479px) {
             /* Header */
-            .navbar-brand h1 {
-                padding-top: 5px;
-                font-size: 6vw;
+            #main-header h1 {
+                margin-bottom: 20px
             }
             /* End Header */
             /* Home Page */
-            #menu-tile,
-            #specials-tile {
+            #chicken-tile,
+            #beef-tile,
+            #sushi-tile {
                 width: 280px;
                 margin: 0 auto 15px;
             }
@@ -160,12 +171,4 @@
             color: #ababab;
             background-color: #222;
             border-top: 0;
-        }
-        
-        .panel-footer div.row {
-            margin-bottom: 35px;
-        }
-        
-        .helloInput {
-            width: 300px;
         }
