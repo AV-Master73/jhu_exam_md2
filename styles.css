@@ -77,9 +77,9 @@
         
         @media (min-width: 1200px) {
             .col-md-4 {
-                width: 30%;
+                width: 32%;
                 float: left;
-                padding-left: 10px;
+                padding-left: 12px;
             }
             #main-header h1 {
                 margin-bottom: 20px
@@ -98,13 +98,13 @@
         @media (min-width: 992px) and (max-width: 1199px) {
             .col-sm-6 {
                 float: left;
-                padding-left: 10px;
+                padding-left: 12px;
                 width: 48%;
             }
             .col-sm-12 {
                 float: left;
-                padding-left: 10px;
-                width: 98%;
+                padding-left: 12px;
+                width: 97%;
             }
             #main-header h1 {
                 margin-bottom: 20px
