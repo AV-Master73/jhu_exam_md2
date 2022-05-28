@@ -30,13 +30,18 @@
         #chicken-tile,
         #beef-tile,
         #sushi-tile {
-            height: 250px;
-            width: 90%;
+            height: auto;
             margin-bottom: 15px;
             position: relative;
             text-decoration: none;
-            border: 2px solid #ccbbaa;
+            border: 1px solid #ccbbaa;
             overflow: hidden;
+        }
+        
+        #chicken-tile p,
+        #beef-tile p,
+        #sushi-tile path {
+            text-decoration: none;
         }
         
         #chicken-tile:hover,
@@ -68,19 +73,22 @@
             padding: 40px 5px 5px 5px;
         }
         /* End Home Page */
-        /* Large devices only */
+        /* Large Devices */
         
         @media (min-width: 1200px) {
+            .col-md-4 {
+                width: 28%;
+                float: left;
+                padding-left: 10px;
+            }
             #main-header h1 {
                 margin-bottom: 20px
             }
             #chicken-tile,
             #beef-tile {
-                width: 360px;
                 margin: 15px auto 15px;
             }
             #sushi-tile {
-                width: 360px;
                 margin: 15px auto 15px;
             }
             /* End Home Page */
@@ -94,18 +102,24 @@
         /* Medium devices only */
         
         @media (min-width: 992px) and (max-width: 1199px) {
+            .col-sm-6 {
+                float: left;
+                padding-left: 10px;
+                width: 48%;
+            }
+            .col-sm-12 {
+                float: left;
+                padding-left: 10px;
+                width: 98%;
+            }
             #main-header h1 {
                 margin-bottom: 20px
             }
             #chicken-tile,
             #beef-tile {
-                width: 280px;
-                height: 320px;
                 margin: 15px auto 15px;
             }
             #sushi-tile {
-                width: 280px;
-                height: 320px;
                 margin: 15px auto 15px;
             }
             /* End Home Page */
@@ -119,17 +133,21 @@
         /* Small devices only */
         
         @media (min-width: 768px) and (max-width: 991px) {
+            .col-xs-12 {
+                width: 95%;
+                float: left;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
             /* Home Page */
             #main-header h1 {
                 margin-bottom: 20px
             }
             #chicken-tile,
             #beef-tile {
-                width: 360px;
                 margin: 15px auto 15px;
             }
             #sushi-tile {
-                width: 735px;
                 margin: 15px auto 15px;
             }
             /* End Home Page */
@@ -189,6 +207,7 @@
         
         .panel-footer {
             position: absolute;
+            float: left;
             margin-top: 10px;
             padding-top: 35px;
             padding-bottom: 30px;
