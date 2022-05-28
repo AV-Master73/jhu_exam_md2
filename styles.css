@@ -48,6 +48,7 @@
         #beef-tile:hover,
         #sushi-tile:hover {
             box-shadow: 0 1px 5px 1px #ccbbaa;
+            text-decoration: none;
         }
         
         #chicken-tile span,
@@ -80,6 +81,7 @@
                 width: 32%;
                 float: left;
                 padding-left: 12px;
+                text-decoration: none;
             }
             #main-header h1 {
                 margin-bottom: 20px
@@ -100,11 +102,13 @@
                 float: left;
                 padding-left: 12px;
                 width: 48%;
+                text-decoration: none;
             }
             .col-sm-12 {
                 float: left;
                 padding-left: 12px;
                 width: 97%;
+                text-decoration: none;
             }
             #main-header h1 {
                 margin-bottom: 20px
@@ -126,6 +130,7 @@
                 float: left;
                 padding-left: 10px;
                 padding-bottom: 10px;
+                text-decoration: none;
             }
             /* Home Page */
             #main-header h1 {
